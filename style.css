@@ -65,11 +65,24 @@ p{
     border-radius: 30px;
     transition: background 0.5s;
 }
-
+.navbutton{
+    display: inline-block;
+    background: #ffb9b9;
+    color: rgb(255, 255, 255);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+nav ul button li a{
+    color:white;
+}
 .btn:hover{
     background: #563434; 
 }
-
+.navbutton:hover{
+    background: #563434; 
+}
 .header{
     background: radial-gradient(#fff,#ffd6d6); 
 }
@@ -149,6 +162,14 @@ h4{
 }
 small{
     color:#555;
+}
+.timer{
+    position: relative;
+    text-align: center;
+    border:1px;
+    padding:10px;
+    box-shadow: 0 0 5px 3px #ccc;
+    background-color: tomato;
 }
 
 /*--------------------------------testimonial----------------------*/

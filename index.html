@@ -21,11 +21,22 @@
             </div>
             <nav>
                <ul id="MenuItems">
-                  <li><a href="index.html">Home </a></li>
-                  <li><a href="products.html">Products </a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="account.html">Account</a></li>
+                  <button class="navbutton">
+                     <li><a href="index.html">Home</a></li>
+                  </button>
+                  <button class="navbutton">
+                     <li><a href="products.html">Products</a></li>
+                  </button>
+                  <button class="navbutton">
+                     <li><a href="about.html">About</a></li>
+                  </button>
+                  <button class="navbutton">
+                     <li><a href="contact.html">Contact</a></li>
+                  </button>
+                  <button class="navbutton">
+                     <li><a href="account.html">Account</a></li>
+                  </button>
+
                </ul>
             </nav>
             <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
@@ -235,7 +246,59 @@
                <h1>Smart Band 4</h1>
                <small>Full colour AMOLED. touch display. View call, text, and. app notifications.Activity and. swim
                   tracking.</small>
-               <a href="" class="btn">Buy Now &#8594;</a>
+               <div>
+                  <a href="" class="btn">
+                     Buy Now &#8594;
+                  </a>
+               </div>
+               <div>
+                  <table class="timer">
+                     <th align="center">exclusive sale</th>
+                     <tr>
+                        <td id="days">12</td>
+                        <td id="hours">13</td>
+                        <td id="minutes">14</td>
+                        <td id="seconds">15</td>
+                     </tr>
+                     <tr>
+                        <td>Days</td>
+                        <td>Hours</td>
+                        <td>Minutes</td>
+                        <td>Seconds</td>
+                     </tr>
+                  </table>
+                  <script type="text/javascript">
+                     function countdown() {
+                        var now = new Date();
+                        var eventDate = new Date(2021, 5, 29);
+
+                        var currentTime = now.getTime();
+                        var eventTime = eventDate.getTime();
+                        var remTime = eventTime - currentTime;
+                        var s = Math.floor(remTime / 1000);
+                        var m = Math.floor(s / 60);
+                        var h = Math.floor(m / 60);
+                        var d = Math.floor(h / 24);
+
+                        h %= 24;
+                        m %= 60;
+                        s %= 60;
+
+                        h = (h < 10) ? "0" + h : h;
+                        m = (m < 10) ? "0" + m : m;
+                        s = (s < 10) ? "0" + s : s;
+
+                        document.getElementById("days").textContent = d;
+                        document.getElementById("days").innerText = d;
+                        document.getElementById("hours").textContent = h;
+                        document.getElementById("minutes").textContent = m;
+                        document.getElementById("seconds").textContent = s;
+
+                        setTimeout(countdown, 1000);
+                     }
+                     countdown()
+                  </script>
+               </div>
             </div>
          </div>
       </div>
@@ -345,7 +408,7 @@
                <h3>Follow us</h3>
                <ul>
                   <li>Facebook</li>
-                  <li>Instagram</li>
+                  <li> <a href="https://www.instagram.com/herbs_n_miracle/">Instagram</a></li>
                   <li>Twitter</li>
                   <li>YouTube</li>
                </ul>
