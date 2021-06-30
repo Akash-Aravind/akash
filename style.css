@@ -64,23 +64,11 @@ p{
     margin: 30px 0;
     border-radius: 30px;
     transition: background 0.5s;
+    position:relative;
+    bottom:20px;
 }
-.navbutton{
-    display: inline-block;
-    background: #ffb9b9;
-    color: rgb(255, 255, 255);
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s;
-}
-nav ul button li a{
-    color:white;
-}
+
 .btn:hover{
-    background: #563434; 
-}
-.navbutton:hover{
     background: #563434; 
 }
 .header{
@@ -166,10 +154,10 @@ small{
 .timer{
     position: relative;
     text-align: center;
-    border:1px;
-    padding:10px;
-    box-shadow: 0 0 5px 3px #ccc;
-    background-color: tomato;
+    background-color: radial-gradient(#fff,#ffd6d6);
+    right:1px;
+    display:inline-grid;
+    width:65%;
 }
 
 /*--------------------------------testimonial----------------------*/
@@ -260,6 +248,12 @@ small{
 .footer-col-3,.footer-col-4{
     flex-basis: 12%;
     text-align: center;
+}
+.footer-col-3 a{
+    color:white;
+}
+.footer-col-4 a{
+    color:white;
 }
 ul{
     list-style-type: none;
@@ -412,7 +406,7 @@ th{
 }
 
 td{
-    padding: 10px 5px;
+    padding: 10px 14px;
 }
 td input{
     width: 40px;
@@ -440,12 +434,11 @@ td img{
     max-width: 400px;
 }
 td:last-child{
-    text-align: right ;
+    text-align: center ;
 }
 th:last-child{
     text-align: right;
 }
-
 /*-------------acount page-------------*/
 
 .account-page{
@@ -495,6 +488,8 @@ form .btn{
     border: none;
     cursor: pointer;
     margin: 10px 0;
+    position:relative;
+    top:0px;
 }
 form .btn:focus{
     outline: none;

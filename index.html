@@ -21,22 +21,11 @@
             </div>
             <nav>
                <ul id="MenuItems">
-                  <button class="navbutton">
-                     <li><a href="index.html">Home</a></li>
-                  </button>
-                  <button class="navbutton">
-                     <li><a href="products.html">Products</a></li>
-                  </button>
-                  <button class="navbutton">
-                     <li><a href="about.html">About</a></li>
-                  </button>
-                  <button class="navbutton">
-                     <li><a href="contact.html">Contact</a></li>
-                  </button>
-                  <button class="navbutton">
-                     <li><a href="account.html">Account</a></li>
-                  </button>
-
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="account.html">Account</a></li>
                </ul>
             </nav>
             <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
@@ -246,31 +235,30 @@
                <h1>Smart Band 4</h1>
                <small>Full colour AMOLED. touch display. View call, text, and. app notifications.Activity and. swim
                   tracking.</small>
+               <table class="timer" border="1px">
+                  <tr>
+                     <td>Days</td>
+                     <td>Hours</td>
+                     <td>Minutes</td>
+                     <td>Seconds</td>
+                  </tr>
+                  <tr>
+                     <td id="days">12</td>
+                     <td id="hours">13</td>
+                     <td id="minutes">14</td>
+                     <td id="seconds">15</td>
+                  </tr>
+               </table>
                <div>
                   <a href="" class="btn">
                      Buy Now &#8594;
                   </a>
                </div>
                <div>
-                  <table class="timer">
-                     <th align="center">exclusive sale</th>
-                     <tr>
-                        <td id="days">12</td>
-                        <td id="hours">13</td>
-                        <td id="minutes">14</td>
-                        <td id="seconds">15</td>
-                     </tr>
-                     <tr>
-                        <td>Days</td>
-                        <td>Hours</td>
-                        <td>Minutes</td>
-                        <td>Seconds</td>
-                     </tr>
-                  </table>
                   <script type="text/javascript">
                      function countdown() {
                         var now = new Date();
-                        var eventDate = new Date(2021, 5, 29);
+                        var eventDate = new Date(2021, 6, 29);
 
                         var currentTime = now.getTime();
                         var eventTime = eventDate.getTime();
@@ -385,7 +373,7 @@
          <div class="row">
             <div class="footer-col-1">
                <h3>Download Our App</h3>
-               <p>Download App for Android and ios mobile pone.</p>
+               <p>Download App for Android and ios mobile phone.</p>
                <div class="app-logo">
                   <img src="images/play-store.png">
                   <img src="images/app-store.png">
@@ -398,10 +386,10 @@
             <div class="footer-col-3">
                <h3>Useful Links</h3>
                <ul>
-                  <li>coupons</li>
-                  <li>Blog post</li>
-                  <li>Return Policy</li>
-                  <li>Join Affilate</li>
+                  <li><a href="coupons.html">coupons</a></li>
+                  <li><a href="blogpost.html">Blog post</a></li>
+                  <li><a href="returnpolicy.html">Return Policy</a></li>
+                  <li><a href="joinaffilate.html">Join Affilate</a></li>
                </ul>
             </div>
             <div class="footer-col-4">
