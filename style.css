@@ -155,7 +155,7 @@ small{
     position: relative;
     text-align: center;
     background-color: radial-gradient(#fff,#ffd6d6);
-    right:1px;
+    right:12px;
     display:inline-grid;
     width:65%;
 }
@@ -391,7 +391,6 @@ select:focus{
 }
 table{
     width: 100%;
-    border:1px;
     border-collapse: collapse;
 
 }
